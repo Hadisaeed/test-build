@@ -25,6 +25,10 @@ install:
 before_build:
   - npm test
   - gulp rebuild:32 --verbose
+  
+build_script:
+  - gulp pack:win32:portable --prod --verbose
+  - gulp pack:win32:installer --prod --verbose
 
  
 
