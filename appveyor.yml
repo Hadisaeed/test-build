@@ -22,9 +22,6 @@ install:
   - npm install -g gulp
   - npm install
 
-before_build:
-  - npm test
-  - gulp rebuild:32 --verbose
  
 
 
