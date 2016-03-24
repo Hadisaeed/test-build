@@ -24,11 +24,11 @@ install:
 
 before_build:
   - npm test
+  - gulp rebuild:32 --verbose
  
 
 
 
 
 
-artifacts:
-  - path: dist\*
+
