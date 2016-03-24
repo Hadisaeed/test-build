@@ -34,6 +34,8 @@ build_script:
 deploy_script:
   - gulp clean:prev-releases:win32 --verbose
   - gulp publish:github --verbose
+  artifacts:
+  - path: dist\*
 
  
 
