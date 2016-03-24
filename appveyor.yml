@@ -21,6 +21,10 @@ install:
   - set PATH=%APPDATA%\npm;%PATH%
   - npm install -g gulp
   - npm install
+  
+before_build:
+  - npm test
+  
 
  
 
