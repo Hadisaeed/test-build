@@ -11,7 +11,7 @@ environment:
   SIGNTOOL_PATH: 'C:/Program Files (x86)/Microsoft SDKs/Windows/v7.1A/Bin/SignTool.exe'
   GITHUB_TOKEN:
     secure: VgebEox3uOMipNS2O/GeWXLpfqPcIp3hUstSLsaL0YpHvxG95FVzQLuI3IbahvFH
-  GITHUB_USERNAME:https://github.com/Aluxian
+ 
 
 
 
