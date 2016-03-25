@@ -9,11 +9,11 @@ branches:
     - deploy
 environment:
   SIGNTOOL_PATH: 'C:/Program Files (x86)/Microsoft SDKs/Windows/v7.1A/Bin/SignTool.exe'
+  SIGN_WIN_CERTIFICATE_FILE: 'C:/foss_ar_sha2.pfx'
+  SIGN_WIN_CERTIFICATE_PASSWORD:
+    secure: jZHktkydPALqcwx36cBY1g==
   GITHUB_TOKEN:
     secure: VgebEox3uOMipNS2O/GeWXLpfqPcIp3hUstSLsaL0YpHvxG95FVzQLuI3IbahvFH
- 
-
-
 
 cache:
   - "node_modules -> package.json"
