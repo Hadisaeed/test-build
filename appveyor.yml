@@ -7,6 +7,10 @@ init:
 branches:
   only:
     - deploy
+environment:
+  SIGNTOOL_PATH: 'C:/Program Files (x86)/Microsoft SDKs/Windows/v7.1A/Bin/SignTool.exe'
+  GITHUB_TOKEN:
+    secure: VgebEox3uOMipNS2O/GeWXLpfqPcIp3hUstSLsaL0YpHvxG95FVzQLuI3IbahvFH
 
 
 
@@ -29,6 +33,12 @@ before_build:
 build_script:
   - gulp pack:win32:portable --prod --verbose
   - gulp pack:win32:installer --prod --verbose
+  deploy_script:
+  - gulp clean:prev-releases:win32 --verbose
+  - gulp publish:github --verbose
+
+artifacts:
+  - path: dist\*
 
 
 
